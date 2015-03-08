@@ -3,7 +3,7 @@
 
 # Read in data
 FILE = 'household_power_consumption.txt'
-PNG_FILE = 'plot2.png'
+PNG_FILE = 'plot1.png'
 
 df = read.table(FILE, header = TRUE, sep = ';', na.strings = '?', stringsAsFactors = FALSE, nrows = 100)
 classes = sapply(df, class)
