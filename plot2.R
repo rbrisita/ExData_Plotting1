@@ -16,10 +16,10 @@ ws$Date = as.Date(ws$Date, '%d/%m/%Y')
 # Configure plot and display
 par(mfrow = c(1,1))
 par(mar = c(4,1,1,1))
-plot(as.POSIXlt(ws$Date)$wday, ws$Global_active_power, pch='.')
+plot(as.POSIXlt(ws$Date)$wday, ws$Global_active_power, pch='.', type='l')
 
 # Create PNG File
 png(PNG_FILE)
-plot(as.POSIXlt(ws$Date)$wday, ws$Global_active_power, pch='.')
+plot(as.POSIXlt(ws$Date)$wday, ws$Global_active_power, pch='.', type='l')
 dev.off()
 
